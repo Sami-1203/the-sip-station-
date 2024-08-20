@@ -1,0 +1,179 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* General body styles */
+body {
+    background-color: #f9f5f1;
+    color: #5a5a5a;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+    background-color: #dab894;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.header__h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.header__nav {
+    margin-top: 15px;
+}
+
+.header__ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header__ul li {
+    margin: 0 15px;
+}
+
+.header__ul a {
+    text-decoration: none;
+    color: #f9f5f1;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.header__ul a:hover {
+    color: #ffc2a1;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('pics/cafe.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero__h2 {
+    font-size: 2.5rem;
+    z-index: 1;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #b08968;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 50px;
+}
+
+aside {
+    background-color: #ffd7ba;
+    padding: 10px;
+    border-left: 5px solid #b08968;
+    margin-top: 20px;
+}
+
+aside h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+label {
+    font-size: 1.2rem;
+    color: #5a5a5a;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #dab894;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #f9f5f1;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b5e3c; /* Changed to brown */
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6d452d;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #dab894;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 1rem;
+}

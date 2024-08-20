@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "author" content = "samiya">
+    <meta name = "description" content="contact us">
+    <title> Contact us </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="pics/icon.jpg">
+</head>
+<body>
+    <header class="header"> <h1 class="header__h1">CONTACT US</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href = "/">HOME </a>
+                </li>
+                
+                <li>
+                    <a href = "/#menu"> menu> </a>
+                </li>
+                <li>
+                    <a href = "hours.html"> cafe hours </a>
+                </li>
+                <li>
+                    <a href = "about.html"> about </a>
+                </li>
+               
+            </ul>
+        </nav>
+      </header>
+      <section>
+        <figure>
+            <img src="pics/cafe2.jpg" alt="at your service"  width="400" height="260">
+            <figcaption>
+                peaceful!
+            </figcaption>
+            </figure>
+      </section>
+      <section>
+      <main>
+        
+        <h2> our contact form</h2>
+        <form action="https://httpbin.org/get" method = "get">
+            <fieldset>
+            <legend> send us feedback!</legend>
+            <label for="name">name</label>
+            <input type="text" name = "name" id = "name" placeholder = "your name" required>
+            <p>
+                <label for = " phone"> phone</label>
+                <input type = "tel" name = "phone" id = "phone" placeholder = "1234567890"  required>
+            </p>
+            <label for="email">email</label>
+            <input type="email" name = "email" id = "email" placeholder = "your email" required>
+            
+            
+    <p>
+        <label for="message">your message</label>
+        <br>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder = "give message"></textarea>
+</p>
+  
+    </fieldset>
+    <br>
+    <button type = "submit">submit</button>
+    <button type = "reset">reset</button>
+</form>
+      </main>
+    </section>
+      <hr>
+      <section>
+        <h2> our location!</h2>
+        <address> 555 sunlane,nyc
+            <br><br>
+            phone: <a href="tel:+555-555-555">555-555-555</a>
+        </address>
+      </section>
+      <hr>
+      <footer>
+        <p>
+            copyright &copy; The Sip Station </p>
+      </footer>
+</body>
+</html>
